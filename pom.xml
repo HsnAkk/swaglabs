@@ -35,6 +35,38 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!--
+		https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager 
+		Automated driver management and other helper features for Selenium WebDriver in
+		Java
+		-->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.5.3</version>
+		</dependency>
+
+		<!--
+		https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind 
+		General data-binding functionality for Jackson: works on core streaming API
+		-->
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.15.2</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports 
+		ExtentReports library
+		-->
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>5.1.1</version>
+		</dependency>
+
+
 	</dependencies>
 
 	<build>
