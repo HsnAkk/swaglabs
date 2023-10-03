@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 import pageobjects.CartPage;
 import pageobjects.CheckoutPage;
+import pageobjects.FinishPage;
 import pageobjects.OverviewPage;
 import pageobjects.ProductCatalogue;
 
@@ -40,9 +41,20 @@ public class SubmitOrderTest extends BaseTest {
 		// Go to Checkout Page
 		CheckoutPage checkoutPage = cartPage.goToCheckout();
 		checkoutPage.verifyCheckoutLabel();
+		checkoutPage.addYourInformation();
 
-		// Go to Cart Page
-		OverviewPage overviewPage = checkoutPage.postInformation();
+		// Go to Overview Page
+		OverviewPage overviewPage = checkoutPage.goToOverviewPage();
+		
+		// OVERVIEW PAGE
+		overviewPage.verifyOverviewLabel();
+		
+		// go to Finish Page
+		FinishPage finishpage = overviewPage.goToFinishPage();
+		
+		// FINISH PAGE
+		
+		
 
 	}
 

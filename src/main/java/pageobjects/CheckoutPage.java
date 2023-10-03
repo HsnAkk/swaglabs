@@ -48,10 +48,13 @@ public class CheckoutPage extends AbstractComponent {
 		Assert.assertEquals(checkoutLabel, label);
 	}
 	
-	public OverviewPage postInformation () {
+	public void addYourInformation () {
 		checkoutFirstName.sendKeys(firstName);
 		checkoutLastName.sendKeys(lastName);
 		checkoutPostalCode.sendKeys(postalCode);
+	}
+	
+	public OverviewPage goToOverviewPage () {
 		submitButton.click();
 		
 		return new OverviewPage(driver);
