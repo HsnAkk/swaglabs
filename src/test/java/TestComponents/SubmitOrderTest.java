@@ -53,6 +53,12 @@ public class SubmitOrderTest extends BaseTest {
 		FinishPage finishpage = overviewPage.goToFinishPage();
 		
 		// FINISH PAGE
+		finishpage.verifyFinishLabel();
+		finishpage.verifySuccessMessage();
+		
+		// LOGOUT
+		finishpage.logout();
+		
 		
 		
 
