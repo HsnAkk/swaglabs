@@ -6,11 +6,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import AbstractComponents.AbstractComponent;
 
 public class CartPage extends AbstractComponent {
 	WebDriver driver;
+	String cartLabel = "Your Cart";
 
 	public CartPage(WebDriver driver) {
 		super(driver);
@@ -31,6 +33,15 @@ public class CartPage extends AbstractComponent {
 	
 	
 	// ACTIONS
+	
+	public void verifyCartLabel() {
+		// explicit wait
+		waitForWebElementToAppear(cartLabelElement);
+		// get Label of page and verify it
+		String label = getLabel(cartLabelElement);
+		Assert.assertEquals(cartLabel, label);
+	}
+
 	
 	public Boolean verifyProductDisplay(String productName) {
 		Boolean isMatched = cartProductNames.stream().anyMatch(elem -> elem.getText().equalsIgnoreCase(productName));

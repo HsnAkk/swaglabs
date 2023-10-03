@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-01T00:01:20 CEST" name="Default suite" finished-at="2023-10-01T00:01:28 CEST" duration-ms="8288">
+  <suite started-at="2023-10-03T14:09:28 CEST" name="Default suite" finished-at="2023-10-03T14:09:44 CEST" duration-ms="15681">
     <groups>
     </groups>
-    <test started-at="2023-10-01T00:01:20 CEST" name="Default test" finished-at="2023-10-01T00:01:28 CEST" duration-ms="8288">
+    <test started-at="2023-10-03T14:09:28 CEST" name="Default test" finished-at="2023-10-03T14:09:44 CEST" duration-ms="15681">
       <class name="TestComponents.SubmitOrderTest">
-        <test-method is-config="true" signature="lunchApplication()[pri:0, instance:TestComponents.SubmitOrderTest@6e6f2380]" started-at="2023-10-01T00:01:20 CEST" name="lunchApplication" finished-at="2023-10-01T00:01:23 CEST" duration-ms="3230" status="PASS">
+        <test-method is-config="true" signature="lunchApplication()[pri:0, instance:TestComponents.SubmitOrderTest@6e6f2380]" started-at="2023-10-03T14:09:28 CEST" name="lunchApplication" finished-at="2023-10-03T14:09:38 CEST" duration-ms="9322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lunchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:TestComponents.SubmitOrderTest@6e6f2380]" started-at="2023-10-01T00:01:23 CEST" name="submitOrder" data-provider="getData" finished-at="2023-10-01T00:01:25 CEST" duration-ms="1377" status="PASS">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:TestComponents.SubmitOrderTest@6e6f2380]" started-at="2023-10-03T14:09:38 CEST" name="submitOrder" data-provider="getData" finished-at="2023-10-03T14:09:40 CEST" duration-ms="1861" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,15 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestComponents.SubmitOrderTest@6e6f2380]" started-at="2023-10-01T00:01:25 CEST" name="tearDown" finished-at="2023-10-01T00:01:25 CEST" duration-ms="261" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestComponents.SubmitOrderTest@6e6f2380]" started-at="2023-10-03T14:09:40 CEST" name="tearDown" finished-at="2023-10-03T14:09:40 CEST" duration-ms="291" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="lunchApplication()[pri:0, instance:TestComponents.SubmitOrderTest@6e6f2380]" started-at="2023-10-01T00:01:25 CEST" name="lunchApplication" finished-at="2023-10-01T00:01:27 CEST" duration-ms="1918" status="PASS">
+        <test-method is-config="true" signature="lunchApplication()[pri:0, instance:TestComponents.SubmitOrderTest@6e6f2380]" started-at="2023-10-03T14:09:40 CEST" name="lunchApplication" finished-at="2023-10-03T14:09:42 CEST" duration-ms="1956" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lunchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:TestComponents.SubmitOrderTest@6e6f2380]" started-at="2023-10-01T00:01:27 CEST" name="submitOrder" data-provider="getData" finished-at="2023-10-01T00:01:28 CEST" duration-ms="1089" status="PASS">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:TestComponents.SubmitOrderTest@6e6f2380]" started-at="2023-10-03T14:09:42 CEST" name="submitOrder" data-provider="getData" finished-at="2023-10-03T14:09:44 CEST" duration-ms="1677" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,7 +41,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestComponents.SubmitOrderTest@6e6f2380]" started-at="2023-10-01T00:01:28 CEST" name="tearDown" finished-at="2023-10-01T00:01:28 CEST" duration-ms="188" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestComponents.SubmitOrderTest@6e6f2380]" started-at="2023-10-03T14:09:44 CEST" name="tearDown" finished-at="2023-10-03T14:09:44 CEST" duration-ms="309" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

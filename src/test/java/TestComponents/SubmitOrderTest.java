@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 import pageobjects.CartPage;
 import pageobjects.CheckoutPage;
+import pageobjects.OverviewPage;
 import pageobjects.ProductCatalogue;
 
 import org.testng.Assert;
@@ -32,13 +33,16 @@ public class SubmitOrderTest extends BaseTest {
 		CartPage cartPage = productCatalogue.goToCartPage();
 
 		// CART PAGE
+		cartPage.verifyCartLabel();
 		Boolean match = cartPage.verifyProductDisplay(input.get("productName"));
 		Assert.assertTrue(match);
-		// System.out.println(match);
-		
+
 		// Go to Checkout Page
 		CheckoutPage checkoutPage = cartPage.goToCheckout();
-		
+		checkoutPage.verifyCheckoutLabel();
+
+		// Go to Cart Page
+		OverviewPage overviewPage = checkoutPage.postInformation();
 
 	}
 
